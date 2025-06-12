@@ -1,0 +1,28 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@pixelcanvas/types": ["./packages/types/src"],
+      "@pixelcanvas/shared": ["./packages/shared/src"],
+      "@pixelcanvas/canvas-engine": ["./packages/canvas-engine/src"],
+      "@pixelcanvas/test-utils": ["./packages/test-utils/src"]
+    }
+  },
+  "include": [
+    "packages/**/*",
+    "apps/**/*",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    ".next",
+    "out", 
+    "build",
+    "coverage",
+    "test-results"
+  ]
+}
